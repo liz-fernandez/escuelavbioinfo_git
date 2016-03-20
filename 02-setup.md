@@ -7,7 +7,7 @@ minutes: 5
 > ## Objetivos de aprendizaje {.objectives}
 >
 > * Instalar 'git' en dos plataformas: Windows y Linux
-> *  Configurar `git` la primera vez que es utilizado en una computadora.
+> *  Configurar `git` la  primera vez que es utilizado en una computadora.
 > *  Entender el significado de la bandera de configuración `--global`.
 
 Para descargar e instalar 'git' en Linux ejecuta el siguiente comando en bash:
@@ -30,7 +30,7 @@ $ git config --global user.email "mandy.grim@purohueso.org"
 $ git config --global color.ui "auto"
 ~~~
 
-(Por favor utilicen su propio nombre y correo electrónico en vez del de Mandy.)
+(Por favor recuerden utilizar su propio nombre y correo electrónico en vez del de Mandy.)
 
 También configura su editor de texto favorito, de acuerdo a los comandos en esta tabla:
 
@@ -49,22 +49,36 @@ También configura su editor de texto favorito, de acuerdo a los comandos en est
 
 
 Los comandos de Git se escriben `git verb`, donde `verb` es lo que queremos que git haga.
-En este caso, le estamos diciendo a Git:
+Para nuestro ejemplo:
 
-*   nuestro nombre y dirección de correo electrónico,
-*   que coloree el texto de salida (output),
-*   cual es nuestro editor de texto preferido,
-*   y que queremos utilizar esta configuración globalmente (i.e. en cada proyecto)
+~~~ {.bash}
+$ git config --global user.name "Mandy Grim"
+$ git config --global user.email "mandy.grim@purohueso.org"
+$ git config --global color.ui "auto"
+$ git config --global core.editor "nano -w"
+~~~
+
+Le estamos diciendo a Git:
+
+*   nuestro nombre y dirección de correo electrónico, {user.name}{user.email}
+*   que coloree el texto de salida (output), {color.ui}
+*   cual es nuestro editor de texto preferido,{core.editor}
+*   y que queremos utilizar esta configuración globalmente (i.e. en cada proyecto) {--global}
 
 Los cuatro comandos que escribimos anteriormente solo se tienen que ejecutar una sola
 vez: la bandera `--global` le indica a Git que debe utilizar esta configuración en 
 cada proyecto, con ese usuario, en esa computadora. 
 
-Puedes verificar tu configuración en cualquier momento usando:
+Pueden verificar su configuración en cualquier momento usando el comando:
 
 ~~~ {.bash}
 $ git config --list
 ~~~
+
+De nuevo si analizan el comando escrito se darán cuenta:
+
+* queremos enlistar {--list}
+* la configuración de git en nuestro sistema {config}
 
 Puedes cambiar la configuración tantas veces como lo desees: solo utiliza los
 mismos comandos para elegir otro editor de texto o para actualizar tu dirección 
