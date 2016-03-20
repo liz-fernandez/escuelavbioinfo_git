@@ -11,7 +11,7 @@ minutes: 5
 
 Comenzaremos explorando como podemos utilizar el control de versiones
 para mantener un registro de que cambios hizo una sola persona, así como
-de cuando se realizaron estos cambios. Estos cambios pueden ser en un escrito
+de cuando se realizaron estos cambios. Dichos cambios pueden ser en un escrito
 o en una pieza de código. 
 Incluso si no realizas trabajos en colaboración con otros personas, 
 usar un sistema de control de versiones es mucho mejor que terminar en una 
@@ -44,5 +44,5 @@ Un sistema de control de versiones es una herramienta que mantiene un registro d
 > Sin embargo, varios de estos se empiezan a considerar sistemas heredados debido a las diversas limitaciones en sus capacidades. 
 > A los sistemas más modernos como Git y [Mercurial](http://swcarpentry.github.io/hg-novice/) se les conoce como
 > *distribuidos*, ya que no cuentan con un servidor centralizado que almacena el repositorio.
-> Estos sistemas modernos también incluyen poderosas herramientas e unión o "merging" que permiten que multiples contribuidores trabajen 
+> Estos sistemas modernos también incluyen poderosas herramientas de unión o "merging" que permiten que multiples contribuidores trabajen 
 > en los mismos archivos de manera simultánea. 
