@@ -6,7 +6,7 @@ minutes: 10
 ---
 > ## Objetivos de aprendizaje {.objectives}
 >
-> *   Explain different options for hosting scientific work.
+> *  Explicar distintas opciones para albergar trabajo científico.
 
 The second big question for groups that want to open up their work
 is where to host their code and data.
