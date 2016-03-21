@@ -86,7 +86,7 @@ ejecuta este comando:
 $ git remote add origin https://github.com/vlad/planets.git
 ~~~
 
-Segurarate de utilizar la URL para tu repositorio en vez de la de Vlad:
+Asegurate de utilizar la URL para tu repositorio en vez de la de Vlad:
 debes utilizar tu nombre de usuario en vez de `vlad`.
 
 Podemos verificar que el comando funcionó ejecutando `git remote -v`:
