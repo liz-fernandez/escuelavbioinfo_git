@@ -174,7 +174,7 @@ From https://github.com/vlad/planets
 Already up-to-date.
 ~~~
 
-Bajar en este caso no tienen ningún efecto, 
+Bajar en este caso no tiene ningún efecto, 
 ya que ambos repositorios están sincronizados.
 Si alguien más hubiese subido cambios al repositorio de GitHub, 
 este comando nos permitiría bajarlos a nuestro repositorio local. 
@@ -198,7 +198,7 @@ usuario caerá en un conflicto.
 > Crea un repositorio remoto en GitHub.
 > Sube (push) los contenidos de tu repositorio local al remoto. 
 > Realiza cambios en tu repositorio local y súbelos a GitHub.
-> Ve al repositorio que acabase de crear y revisa la marca de tiempo o [timestamp](reference.html#timestamp) del archivo.
+> Ve al repositorio que acabas de crear y revisa la marca de tiempo o [timestamp](reference.html#timestamp) del archivo.
 > ¿Cómo registra GitHub los tiempos y por qué?
 
 > ## Push vs. commit {.challenge}
