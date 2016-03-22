@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: Control de versiones usando Git
 subtitle: Control Automatizado de Versiones
@@ -10,8 +10,8 @@ minutes: 5
 > *   Entender las bases del funcionamiento de Git. 
 
 Comenzaremos explorando como podemos utilizar el control de versiones
-para mantener un registro de que cambios hizo una sola persona, así como
-de cuando se realizaron estos cambios. Dichos cambios pueden ser en un escrito
+para mantener un registro de qué cambios hizo una sola persona, así como
+de cuándo se realizaron estos cambios. Dichos cambios pueden ser en un escrito
 o en una pieza de código. 
 Incluso si no realizas trabajos en colaboración con otros personas, 
 usar un sistema de control de versiones es mucho mejor que terminar en una 
