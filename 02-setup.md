@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: Control de versiones usando Git
 subtitle: Configurando Git
@@ -32,7 +32,7 @@ $ git config --global color.ui "auto"
 
 (Por favor recuerden utilizar su propio nombre y correo electrónico en vez del de Mandy.)
 
-También configura su editor de texto favorito, de acuerdo a los comandos en esta tabla:
+También configure su editor de texto favorito, de acuerdo a los comandos en esta tabla:
 
 | Editor             | Comando de configuración                    |
 |:-------------------|:-------------------------------------------------|
