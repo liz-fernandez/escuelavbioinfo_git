@@ -19,8 +19,8 @@
   <body class="lesson">
     <div class="container card">
       <div class="banner">
-        <a href="http://www.puntoyaprende.com/pbi/" title="Posgrado en Biologia Integrativa">
-          <img alt="Logo Posgrado Biologia Integrativa" src="img/posgrado_bi_logo.png" />
+        <a href="http://paginas.matem.unam.mx/bioinformatica/index.php" title="Escuela de Verano de Bioinformatica">
+          <img alt="Logo Escuela de Verano de Bioinformatica 2016" src="img/logo-bioinformatica2.png" />
         </a>
       </div>
       <article>
@@ -39,7 +39,7 @@
 </ul>
 </div>
 </section>
-<p>Creemos un archivo llamado <code>mars.txt</code> que contenga algunas notas acerca de las posibilidades de utilizar el planeta rojo como base espacial.<br />
+<p>Creemos un archivo llamado <code>mars.txt</code>, que contenga algunas notas acerca de las posibilidades de utilizar el planeta rojo como base espacial.<br />
 (Para el ejercicio utilizaremos el editor <code>nano</code> para editar el archivo; puedes utilizar tu editor de texto preferido si así lo deseas. Mantén en mente que este no tiene que ser el <code>core.editor</code> que asignamos como editor global previamente.)</p>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">nano</span> mars.txt</code></pre></div>
 <p>Escribe el siguiente texto dentro del archivo <code>mars.txt</code>:</p>
@@ -60,7 +60,7 @@
 #
 #   mars.txt
 nothing added to commit but untracked files present (use &quot;git add&quot; to track)</code></pre>
-<p>El mensaje notificándonos de archivos no rastreados “untracked files” nos indica que hay un archivo que Git no está rastreando: Le podemos decir a Git que rastree este archivo utilizando <code>git add</code>:</p>
+<p>El mensaje, notificándonos de archivos no rastreados por “untracked files”, nos indica que hay un archivo que Git no está rastreando. Le podemos decir a Git que rastree este archivo utilizando <code>git add</code>:</p>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">git</span> add mars.txt</code></pre></div>
 <p>y revisar que el cambio se efectuó correctamente:</p>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">git</span> status</code></pre></div>
@@ -78,10 +78,10 @@ nothing added to commit but untracked files present (use &quot;git add&quot; to 
 <pre class="output"><code>[master (root-commit) f22b25e] Start notes on Mars as a base
  1 file changed, 1 insertion(+)
  create mode 100644 mars.txt</code></pre>
-<p>Cuando ejecutamos <code>git commit</code>, Git toma todo lo que le hemos indicado agregar usando <code>git add</code> y almacena una copia permanentemente dentro del directorio especial <code>.git</code>. Esta copia permanente se llama un <a href="reference.html#commit">commit</a> (o <a href="reference.html#revision">revision</a>) y su código de identificación corto es <code>f22b25e</code>. (Tu commit puede tener otro identificador).</p>
-<p>Utilizamos la bandera <code>-m</code> (de “mensaje”) para guardar un mensaje específico, corto y descriptivo que nos permita recordar que cambios hicimos y porque. Si solo ejecutamos el comando <code>git commit</code> sin la opción <code>-m</code>,<br />
-Git iniciará <code>nano</code> (o cualquier otro editor que hayamos asignado como <code>core.editor</code>) para permitirnos escribir un mensaje más largo.</p>
-<p>Los <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">mensajes buenos en un commit</a> comienzan con un pequeño resumen (menos de 50 caracteres) de los cambios hechos como parte del commit. Si deseas agregar detalles más descriptivos puedes añadir una línea vacía entre la línea de resumen y otros notas adicionales.</p>
+<p>Cuando ejecutamos <code>git commit</code>, Git toma los archivos que hemos agregado a través del comando <code>git add</code> y almacena una copia permanentemente dentro del directorio especial <code>.git</code>. Esta copia permanente se llama un <a href="reference.html#commit">commit</a> (o <a href="reference.html#revision">revision</a>) y su código corto de identificación es <code>f22b25e</code>. (Cada commit tendrá un identificador distinto).</p>
+<p>Utilizamos la bandera <code>-m</code> (de “mensaje”) para guardar un mensaje específico, corto y descriptivo que nos permita recordar qué cambios hicimos y el porqué. Si sólo ejecutamos el comando <code>git commit</code> sin la opción <code>-m</code>,<br />
+Git iniciará <code>nano</code> (o cualquier otro editor que hayamos asignado como <code>core.editor</code>) para permitirnos escribir el mensaje. Si no se escribe un un mensaje, no se realizará el commit.</p>
+<p>Los <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">buenos mensajes en un commit</a> comienzan con un pequeño resumen (menos de 50 caracteres) de los cambios hechos como parte del commit. Si deseas agregar detalles más descriptivos puedes añadir una línea vacía entre la línea de resumen y otros notas adicionales.</p>
 <p>Si después de esto ejecutamos <code>git status</code>:</p>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">git</span> status</code></pre></div>
 <pre class="output"><code># On branch master
@@ -93,7 +93,7 @@ Author: Vlad Dracula &lt;vlad@tran.sylvan.ia&gt;
 Date:   Thu Aug 22 09:51:46 2013 -0400
 
     Start notes on Mars as a base</code></pre>
-<p><code>git log</code> lista todos los commits realizados en ese repositorio en ordern cronológico inverso. El listado de cada commit incluye el identificador (el cual comienza con los mismo caracteres que el identificador corto impreso por el comando <code>git commit</code> que ejecutamos previamente), el autor del commit, cuando fue creado, y el mensaje de registro (log) que le otorgamos a Git cuando creamos el commit.</p>
+<p><code>git log</code> lista todos los commits realizados en ese repositorio en ordern cronológico inverso. El listado de cada commit incluye el identificador (el cual comienza con los mismo caracteres que el identificador corto impreso por el comando <code>git commit</code> que ejecutamos previamente), el autor del commit, cuándo fue creado, y el mensaje de registro (log) que le otorgamos a Git cuando creamos el commit.</p>
 <aside class="callout panel panel-info">
 <div class="panel-heading">
 <h2 id="dónde-están-mis-cambios"><span class="glyphicon glyphicon-pushpin"></span>¿Dónde están mis cambios?</h2>
@@ -117,7 +117,7 @@ The two moons may be a problem for Mandy</code></pre>
 #   modified:   mars.txt
 #
 no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)</code></pre>
-<p>La última linea proporciona la frase clave: “no changes added to commit”. Hemos modificado este archivo, pero no le hemos dicho a Git que queremos agregar estos cambios (lo cual hacemos con el comando <code>git add</code>) como tampoco los hemos guardado permanentemente (lo que hacemos usando <code>git commit</code>). Hagámoslo ahora. Es un buen hábito siempre revisar nuestros cambios antes de guardarlos. Hacemos esto utilizando <code>git diff</code>. Este comando nos muestra las diferencias entre el estado actual del archivo y la última versión guardada:</p>
+<p>La última línea proporciona la frase clave: “no changes added to commit”. Hemos modificado este archivo, pero no le hemos dicho a Git que queremos agregar estos cambios (lo cual hacemos con el comando <code>git add</code>) como tampoco los hemos guardado permanentemente (lo que hacemos usando <code>git commit</code>). Hagámoslo ahora. Es un buen hábito siempre revisar nuestros cambios antes de guardarlos. Hacemos esto utilizando <code>git diff</code>. Este comando nos muestra las diferencias entre el estado actual del archivo y la última versión guardada:</p>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">git</span> diff</code></pre></div>
 <pre class="output"><code>diff --git a/mars.txt b/mars.txt
 index df0654a..315bf3a 100644
@@ -128,8 +128,8 @@ index df0654a..315bf3a 100644
 +The two moons may be a problem for Mandy</code></pre>
 <p>El texto de salida es críptico ya que es una serie de comandos para herramientas tales como editores y <code>patch</code> indicándoles como reconstruir un archivo dado los cambios en el otro. Si lo dividimos en partes:</p>
 <ol style="list-style-type: decimal">
-<li>La primera linea nos indica que Git esta imprimiendo un resultado similar al del commando <code>diff</code> al comparar la versión antigua y nueva del archivo.</li>
-<li>La segunda línea nos dice exactamente que versiones del archivo está comparando Git; <code>df0654a</code> y <code>315bf3a</code> son etiquetas únicas generadas por la computadora para cada una de esas versiones.</li>
+<li>La primera línea nos indica que Git está imprimiendo un resultado similar al del commando <code>diff</code> al comparar la versión antigua y nueva del archivo.</li>
+<li>La segunda línea nos dice exactamente qué versiones del archivo está comparando Git; <code>df0654a</code> y <code>315bf3a</code> son etiquetas únicas generadas por la computadora para cada una de esas versiones.</li>
 <li>La tercera y cuarta línea muestran el nombre del archivo que cambiamos.</li>
 <li>Las líneas restantes son las más interesantes, ya que nos muestras las diferencias en sí así como las líneas en las que ocurrieron estos cambios. En particular, los símbolos de <code>+</code> en la primera columna muestras donde se han añadido líneas.</li>
 </ol>
@@ -156,7 +156,7 @@ $ <span class="kw">git</span> commit -m <span class="st">&quot;Add concerns abou
 <h2 id="staging-area"><span class="glyphicon glyphicon-pushpin"></span>Staging area</h2>
 </div>
 <div class="panel-body">
-<p>Si pensamos en Git como una cámera que toma fotos de los cambios a lo largo de la vida de un proyecto, entonces <code>git add</code> indica <em>que</em> se va a incluir en la fotografía y <code>git commit</code> esta encargado de <em>tomar</em> la fotografía, así como de crear un registro permanente de la misma (como un commit). Si no hay nada en fase “staged” cuando ejecutamos <code>git commit</code>, Git te pedirá que utilices <code>git commit -a</code> o <code>git commit --all</code>, lo cual sería el equivalente de !invitar a <em>todos</em> los cambios a salir en la foto! Sin embargo, casi siempre es mejor añadir cada cambio de manera explícita al área de staging, ya que puede ser que apruebes cambios que hiciste pero olvidaste. (Siguiendo con la analogía de las fotografías puede que incluyas a un extra con maquillaje incompleto caminando en medio de la foto por haber utilizado <code>-a</code>!). Trata de añadir cosas manualmente o frecuentemente te encontrarás buscando el comando “git undo commit”.</p>
+<p>Si pensamos en Git como una cámera que toma fotos de los cambios a lo largo de la vida de un proyecto, entonces <code>git add</code> indica <em>qué</em> se va a incluir en la fotografía y <code>git commit</code> esta encargado de <em>tomar</em> la fotografía, así como de crear un registro permanente de la misma (como un commit). Si no hay nada en fase “staged” cuando ejecutamos <code>git commit</code>, Git te pedirá que utilices <code>git commit -a</code> o <code>git commit --all</code>, lo cual sería equivalente a !invitar a <em>todos</em> los cambios a salir en la foto! Sin embargo, casi siempre es mejor añadir cada cambio de manera explícita al área de staging, ya que puede ser que apruebes cambios que hiciste pero olvidaste. (Siguiendo con la analogía de las fotografías puede que incluyas a un extra con maquillaje incompleto caminando en medio de la foto por haber utilizado <code>-a</code>!). Trata de añadir cosas manualmente o frecuentemente te encontrarás buscando el comando “git undo commit”.</p>
 </div>
 </aside>
 <div class="figure">
@@ -232,7 +232,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 <ol style="list-style-type: decimal">
 <li>“Cambios”</li>
 <li>“Línea añadida ‘But Billy will appreciate the lack of humidity’ a mars.txt”</li>
-<li>“Discución acerca de los efectos del clima marciano en Billy”</li>
+<li>“Discusión acerca de los efectos del clima marciano en Billy”</li>
 </ol>
 </div>
 </section>
@@ -262,14 +262,14 @@ $ git commit -m &quot;my recent changes&quot;</code></pre></li>
 </section>
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 id="author-y-committer"><span class="glyphicon glyphicon-pencil"></span>Author y Committer</h2>
+<h2 id="autor-y-committer"><span class="glyphicon glyphicon-pencil"></span>Autor y Committer</h2>
 </div>
 <div class="panel-body">
 <p>Por cada uno de los commits que haz realizado, Git ha almacenado tu nombre dos veces. Se almacena tu nombre como el autor así como la persona realizando los commits o “commiter”. Puedes revisar esto pidiéndole a Git que te muestre más información acerca de tus commits más recientes:</p>
 <pre><code>$ git log --format=full</code></pre>
 <p>Al realizar un commit puedes nombrar a alguien más como autor:</p>
 <pre><code>$ git commit --author=&quot;Stanley Kubrick &lt;s.kubrick@sciland.com&gt;&quot;</code></pre>
-<p>Crea un nuevo repositorio y crea dos commits: uno sin la opción <code>--author</code> y otra nombrando a un compañero tuyo como autor. Ejecuta <code>git log</code> y <code>git log --format=full</code>. Piensa en que manera esto puede ayudarte a colaborar con tus compañeros.</p>
+<p>Crea un nuevo repositorio y crea dos commits: uno sin la opción <code>--author</code> y otra nombrando a un compañero tuyo como autor. Ejecuta <code>git log</code> y <code>git log --format=full</code>. Piensa en qué manera esto puede ayudarte a colaborar con tus compañeros.</p>
 </div>
 </section>
         </div>

@@ -19,8 +19,8 @@
   <body class="lesson">
     <div class="container card">
       <div class="banner">
-        <a href="http://www.puntoyaprende.com/pbi/" title="Posgrado en Biologia Integrativa">
-          <img alt="Logo Posgrado Biologia Integrativa" src="img/posgrado_bi_logo.png" />
+        <a href="http://paginas.matem.unam.mx/bioinformatica/index.php" title="Escuela de Verano de Bioinformatica">
+          <img alt="Logo Escuela de Verano de Bioinformatica 2016" src="img/logo-bioinformatica2.png" />
         </a>
       </div>
       <article>
@@ -34,17 +34,22 @@
 </div>
 <div class="panel-body">
 <ul>
+<li>Instalar ‘git’ en dos plataformas: Windows y Linux</li>
 <li>Configurar <code>git</code> la primera vez que es utilizado en una computadora.</li>
 <li>Entender el significado de la bandera de configuración <code>--global</code>.</li>
 </ul>
 </div>
 </section>
+<p>Para descargar e instalar ‘git’ en Linux ejecuta el siguiente comando en bash:</p>
+<p>sudo apt-get install git-all</p>
+<p>Existen diferentes versiones de visualizar Git en plaforma Windows, una de ellas es emulando la consola de Linux, la podrás encontrar en el siguiente link:</p>
+<p>https://git-scm.com/download/win</p>
 <p>Cuando utilizamos Git en una nueva computadora por primera vez, tenemos que configurar algunas cosas. Así es como Mandy configura Git en su nueva laptop:</p>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">git</span> config --global user.name <span class="st">&quot;Mandy Grim&quot;</span>
 $ <span class="kw">git</span> config --global user.email <span class="st">&quot;mandy.grim@purohueso.org&quot;</span>
 $ <span class="kw">git</span> config --global color.ui <span class="st">&quot;auto&quot;</span></code></pre></div>
-<p>(Por favor utilicen su propio nombre y correo electrónico en vez del de Mandy.)</p>
-<p>También configura su editor de texto favorito, de acuerdo a los comandos en esta tabla:</p>
+<p>(Por favor recuerden utilizar su propio nombre y correo electrónico en vez del de Mandy.)</p>
+<p>También configure su editor de texto favorito, de acuerdo a los comandos en esta tabla:</p>
 <table>
 <colgroup>
 <col width="29%" />
@@ -99,16 +104,26 @@ $ <span class="kw">git</span> config --global color.ui <span class="st">&quot;au
 </tr>
 </tbody>
 </table>
-<p>Los comandos de Git se escriben <code>git verb</code>, donde <code>verb</code> es lo que queremos que git haga. En este caso, le estamos diciendo a Git:</p>
+<p>Los comandos de Git se escriben <code>git verb</code>, donde <code>verb</code> es lo que queremos que git haga. Para nuestro ejemplo:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">git</span> config --global user.name <span class="st">&quot;Mandy Grim&quot;</span>
+$ <span class="kw">git</span> config --global user.email <span class="st">&quot;mandy.grim@purohueso.org&quot;</span>
+$ <span class="kw">git</span> config --global color.ui <span class="st">&quot;auto&quot;</span>
+$ <span class="kw">git</span> config --global core.editor <span class="st">&quot;nano -w&quot;</span></code></pre></div>
+<p>Le estamos diciendo a Git:</p>
 <ul>
-<li>nuestro nombre y dirección de correo electrónico,</li>
-<li>que coloree el texto de salida (output),</li>
-<li>cual es nuestro editor de texto preferido,</li>
-<li>y que queremos utilizar esta configuración globalmente (i.e. en cada proyecto)</li>
+<li>nuestro nombre y dirección de correo electrónico, {user.name}{user.email}</li>
+<li>que coloree el texto de salida (output), {color.ui}</li>
+<li>cual es nuestro editor de texto preferido,{core.editor}</li>
+<li>y que queremos utilizar esta configuración globalmente (i.e. en cada proyecto) {–global}</li>
 </ul>
 <p>Los cuatro comandos que escribimos anteriormente solo se tienen que ejecutar una sola vez: la bandera <code>--global</code> le indica a Git que debe utilizar esta configuración en cada proyecto, con ese usuario, en esa computadora.</p>
-<p>Puedes verificar tu configuración en cualquier momento usando:</p>
+<p>Pueden verificar su configuración en cualquier momento usando el comando:</p>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">git</span> config --list</code></pre></div>
+<p>De nuevo si analizan el comando escrito se darán cuenta:</p>
+<ul>
+<li>queremos enlistar {–list}</li>
+<li>la configuración de git en nuestro sistema {config}</li>
+</ul>
 <p>Puedes cambiar la configuración tantas veces como lo desees: solo utiliza los mismos comandos para elegir otro editor de texto o para actualizar tu dirección de correo electrónico.</p>
 <aside class="callout panel panel-info">
 <div class="panel-heading">

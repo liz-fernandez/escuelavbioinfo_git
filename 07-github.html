@@ -19,8 +19,8 @@
   <body class="lesson">
     <div class="container card">
       <div class="banner">
-        <a href="http://www.puntoyaprende.com/pbi/" title="Posgrado en Biologia Integrativa">
-          <img alt="Logo Posgrado Biologia Integrativa" src="img/posgrado_bi_logo.png" />
+        <a href="http://paginas.matem.unam.mx/bioinformatica/index.php" title="Escuela de Verano de Bioinformatica">
+          <img alt="Logo Escuela de Verano de Bioinformatica 2016" src="img/logo-bioinformatica2.png" />
         </a>
       </div>
       <article>
@@ -85,7 +85,7 @@ $ <span class="kw">git</span> init</code></pre></div>
 </div>
 <p>Copia esa dirección URL del navegador, ve al repositorio local <code>planets</code> y ejecuta este comando:</p>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">git</span> remote add origin https://github.com/vlad/planets.git</code></pre></div>
-<p>Segurarate de utilizar la URL para tu repositorio en vez de la de Vlad: debes utilizar tu nombre de usuario en vez de <code>vlad</code>.</p>
+<p>Asegurate de utilizar la URL para tu repositorio en vez de la de Vlad: debes utilizar tu nombre de usuario en vez de <code>vlad</code>.</p>
 <p>Podemos verificar que el comando funcionó ejecutando <code>git remote -v</code>:</p>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">git</span> remote -v</code></pre></div>
 <pre class="output"><code>origin   https://github.com/vlad/planets.git (push)
@@ -142,7 +142,8 @@ $ <span class="kw">git</span> config --global --unset https.proxy</code></pre></
 <pre class="output"><code>From https://github.com/vlad/planets
  * branch            master     -&gt; FETCH_HEAD
 Already up-to-date.</code></pre>
-<p>Bajar en este caso no tienen ningún efecto, ya que ambos repositorios están sincronizados. Si alguien más hubiese subido cambios al repositorio de GitHub, este comando nos permitiría bajarlos a nuestro repositorio local.</p>
+<p>Bajar en este caso no tiene ningún efecto, ya que ambos repositorios están sincronizados. Si alguien más hubiese subido cambios al repositorio de GitHub, este comando nos permitiría bajarlos a nuestro repositorio local.</p>
+<p>Sin embargo se debe tener cuidado de actualizar el repositorio local si si otra persona se encuentra modificando archivos de forma simultanea, ya que al tratar de subir archivos sin antes bajar las últimas modificaciones, el usuario caerá en un conflicto.</p>
 <section class="challenge panel panel-success">
 <div class="panel-heading">
 <h2 id="github-gui"><span class="glyphicon glyphicon-pencil"></span>GitHub GUI</h2>
@@ -156,7 +157,7 @@ Already up-to-date.</code></pre>
 <h2 id="marca-del-tiempo-en-github"><span class="glyphicon glyphicon-pencil"></span>Marca del tiempo en GitHub</h2>
 </div>
 <div class="panel-body">
-<p>Crea un repositorio remoto en GitHub. Sube (push) los contenidos de tu repositorio local al remoto. Realiza cambios en tu repositorio local y súbelos a GitHub. Ve al repositorio que acabase de crear y revisa la marca de tiempo o <a href="reference.html#timestamp">timestamp</a> del archivo. ¿Cómo registra GitHub los tiempos y por qué?</p>
+<p>Crea un repositorio remoto en GitHub. Sube (push) los contenidos de tu repositorio local al remoto. Realiza cambios en tu repositorio local y súbelos a GitHub. Ve al repositorio que acabas de crear y revisa la marca de tiempo o <a href="reference.html#timestamp">timestamp</a> del archivo. ¿Cómo registra GitHub los tiempos y por qué?</p>
 </div>
 </section>
 <section class="challenge panel panel-success">

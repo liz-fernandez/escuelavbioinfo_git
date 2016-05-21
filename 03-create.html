@@ -19,8 +19,8 @@
   <body class="lesson">
     <div class="container card">
       <div class="banner">
-        <a href="http://www.puntoyaprende.com/pbi/" title="Posgrado en Biologia Integrativa">
-          <img alt="Logo Posgrado Biologia Integrativa" src="img/posgrado_bi_logo.png" />
+        <a href="http://paginas.matem.unam.mx/bioinformatica/index.php" title="Escuela de Verano de Bioinformatica">
+          <img alt="Logo Escuela de Verano de Bioinformatica 2016" src="img/logo-bioinformatica2.png" />
         </a>
       </div>
       <article>
@@ -48,7 +48,7 @@ $ <span class="kw">cd</span> planets</code></pre></div>
 <p>Pero si agregamos la bandera <code>-a</code> para mostrarlo todo, podemos ver que Git genera un directorio oculto dentro de <code>planets</code> llamado <code>.git</code>:</p>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">ls</span> -a</code></pre></div>
 <pre class="output"><code>.   ..  .git</code></pre>
-<p>Git almacena información del proyecto en el este subdirectorio especial. Si alguna vez lo borramos perderemos todo el historial de ese proyecto.</p>
+<p>Git almacena información del proyecto en este subdirectorio especial, Si alguna vez lo borramos perderemos todo el historial de ese proyecto.</p>
 <p>Podemos revisar que todo está configurado correctamente pidiéndole a Git que nos indique el estado (status) actual del nuestro proyecto:</p>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">git</span> status</code></pre></div>
 <pre class="output"><code># On branch master
@@ -62,13 +62,13 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)</code
 </div>
 <div class="panel-body">
 <p>Mandy comienza un nuevo proyecto llamado <code>moons</code>, relacionado a su proyecto <code>planets</code>. A pesar de las advertencias de Billy, ejecuta la siguiente secuencia de comandos para crear un repositorio de Git dentro de otro:</p>
-<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">cd</span>             <span class="co"># return to home directory</span>
-<span class="kw">mkdir</span> planets  <span class="co"># make a new directory planets</span>
-<span class="kw">cd</span> planets     <span class="co"># go into planets</span>
-<span class="kw">git</span> init       <span class="co"># make the planets directory a Git repository</span>
-<span class="kw">mkdir</span> moons    <span class="co"># make a sub-directory planets/moons</span>
-<span class="kw">cd</span> moons       <span class="co"># go into planets/moons</span>
-<span class="kw">git</span> init       <span class="co"># make the moons sub-directory a Git repository</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">cd</span>             <span class="co"># regresar al directorio home</span>
+<span class="kw">mkdir</span> planets  <span class="co"># crear nuevo directorio planets</span>
+<span class="kw">cd</span> planets     <span class="co"># ir al directorio planets</span>
+<span class="kw">git</span> init       <span class="co"># convertir el directorio planets en un repositorio Git</span>
+<span class="kw">mkdir</span> moons    <span class="co"># generar subdirectorio planets/moon</span>
+<span class="kw">cd</span> moons       <span class="co"># moverse a  planets/moons</span>
+<span class="kw">git</span> init       <span class="co"># convertir el subdirectorio planets/moons en un repositorio Git</span></code></pre></div>
 <p>¿Porqué es una mala idea hacer esto? ¿Cómo puede Mandy “deshacer” su último <code>git init</code>?</p>
 </div>
 </section>
