@@ -1,4 +1,4 @@
- ---
+---
 layout: page
 title: Control de versiones usando Git
 subtitle: Conflictos
